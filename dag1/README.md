@@ -12,8 +12,9 @@ I tråd med Martin Odersky sin nylige keynote på Devoxx (http://parleys.com/pla
 En annen ting Spiewak snakket om i forbindelse med funksjonell vs. objektorientert programmering var _The expression problem_, et problem identifisert av Philip Wadler, og som man typisk bare løser den ene eller andre delen av hvis man programmerer erketypisk hhv. enten funksjonelt eller objektorientert. En generisk beskrivelse finner på Wikipedia: http://en.wikipedia.org/wiki/Expression_problem
 
 Kort fortalt så går problemet ut på forskjellen ved å uttrykke dispatch av ulike implemenasjoner av en operasjon basert på typer, på en av disse måtene:
-(1) eksternt for typene v.h.a. en switch/case eller if-elseif-else (eller typisk pattern matching i funksjonelle språk)
-(2) internt i typene (objekter) v.h.a. polymorfisme.
+
+1. eksternt for typene v.h.a. en switch/case eller if-elseif-else (eller typisk pattern matching i funksjonelle språk)
+2. internt i typene (objekter) v.h.a. polymorfisme.
 
 For (1) er det lett å legge til nye operasjoner for typene, man lager en switch/case (eller tilsvarende) som utfører det som er relevant for de ulike typene. Men det er vanskelig å legge til en ny type da dette påvirker alle operasjoner basert på matching av type.
 
